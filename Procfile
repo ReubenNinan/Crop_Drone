@@ -1,1 +1,1 @@
-web: gunicorn mysite-project.wsgi
+web: gunicorn Crop_Drone.wsgi
