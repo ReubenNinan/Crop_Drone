@@ -19,7 +19,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgba(232, 238, 226, 0.281);
+    color: rgba(195, 228, 52, 0.753);
     }
 
   button {
@@ -29,9 +29,9 @@
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid rgba(232, 238, 226, 0.281);
+    border: 2px solid rgba(195, 228, 52, 0.753);
     background: transparent;
-    color: rgba(232, 238, 226, 0.281);
+    color: rgba(195, 228, 52, 0.753);
     cursor: pointer;
     position: relative;
     overflow: hidden;
