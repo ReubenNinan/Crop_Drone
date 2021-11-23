@@ -1,1 +1,1 @@
-web: gunicorn Crop_Drone.wsgi --log-file -
+web: gunicorn mysite-project.wsgi
