@@ -1,1 +1,1 @@
-web: gunicorn Crop_Drone.wsgi
+web: gunicorn site:app
