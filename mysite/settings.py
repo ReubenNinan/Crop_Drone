@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'livereload',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +83,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR , 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'crop-drone',
+        'USER': 'admin',
+        'PASSWORD': 'Team77_2021',
+        'HOST': 'cropdrone.cp1xd7eoed6m.us-east-2.rds.amazonaws.com',
     }
 }
 
