@@ -1,6 +1,7 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import GPSData
 
 # Create your views here.
 
@@ -9,4 +10,7 @@ from django.http import HttpResponse
     # #curly bracket references dyanmic information and will be called in HTML file
 
 def index (request):
+
+
+    
     return render(request, 'index.html')

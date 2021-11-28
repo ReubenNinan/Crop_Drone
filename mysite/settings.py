@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'mysite.urls'
+# ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mysite.wsgi.application'
+# WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # Database
@@ -88,6 +88,7 @@ DATABASES = {
         'USER': 'admin',
         'PASSWORD': 'Team77_2021',
         'HOST': 'cropdrone.cp1xd7eoed6m.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
