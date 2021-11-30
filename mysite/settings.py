@@ -31,12 +31,13 @@ SECRET_KEY = 'django-insecure-e=_+7d*2m$2h_@qjegzf1wzc)=z9%6ctubx5i^!p5sl@)56n2g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'crop-drone.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    ''
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,11 +84,11 @@ TEMPLATES = [
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'crop-drone',
-        'USER': 'admin',
+        'USER': 'Team77',
         'PASSWORD': 'Team77_2021',
-        'HOST': 'cropdrone.cp1xd7eoed6m.us-east-2.rds.amazonaws.com',
+        'HOST': 'crop-drone.cp1xd7eoed6m.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
@@ -117,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
