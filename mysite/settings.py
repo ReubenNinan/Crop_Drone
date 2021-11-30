@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e=_+7d*2m$2h_@qjegzf1wzc)=z9%6ctubx5i^!p5sl@)56n2g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -143,3 +143,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assests')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+MEDIA_Root = os.path.join(BASE_DIR, 'static/images')
