@@ -52,12 +52,12 @@ def login(request):
             messages.error(request, 'invalid credentials')
             return redirect('login')
 
-    return render(request, 'login.html')
+    return render(request, 'login.html');
 
     
 def logout(request):
     auth.logout(request)
-    return redirect("/")
+    return redirect("/");
 
-def tables(request):
-    return render(request, 'Tables.html')
+def datapage(request):
+    return render(request, 'Tables.html');

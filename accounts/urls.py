@@ -6,7 +6,7 @@ urlpatterns = [
     path('register', views.register, name = 'register'),
     path('login', views.login, name = 'login'),
     path('logout', views.logout, name = 'logout'),
-    path('tables', views.tables, name = 'tables'),
+    path('datapage', views.datapage, name = 'datapage'),
     ]
 # normal comment
 # ! exclamation comment
