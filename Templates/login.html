@@ -5,7 +5,20 @@
 </head>
 <body>
     
-    <form action = "login"
+    <form action = "login" method = "post" id = "login"> 
+        {% csrf_token %}
+        <input type = "text" name = "username" placeholder="username"><br>
+        <input type = "password" name = "password" placeholder="password"><br>
+        <button class="btn" type = "submit" form = "login" value = "Submit">Submit</button>    
+    </form>
+
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+
+    </div>
+
 
 </body>
 </html>
