@@ -1,0 +1,44 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- {% if user.is_authenticated %} -->
+  <title> GPS DATA</title>
+  <link rel="stylesheet" href="{%static 'Table-style.css'%}">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>X Coordinates</th>
+        <th>Y Coordinates</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+<!-- {% for data in data %}
+  {% if data.user_name == user.username %} -->
+      <tr>
+        <!-- <td class="font stuff"> {{data.X_Coords}}</td>
+        <td class="font stuff"> {{data._Coords}}</td>
+        <td ><img class="image_style" src="{{data.img.url}}" alt=""></td>
+
+  {% endif %}
+{% endfor %} -->
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+<!-- {% endif %} -->
+
+</html>

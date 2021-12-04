@@ -17,8 +17,19 @@
   </div>
 
     <div class="container">
-      <a href = "accounts/login"><button class="btn1">Log In</button></a>
-      <a href = "accounts/register"><button class="btn2">Create Account</button></a>
+
+      {% if user.is_authenticated %}
+
+      <p style="font-size: 20; font-weight: bold; padding: 10px;">Welcome to the Matrix, {{user.username}}. </p>
+      <a href = "accounts/logout"><button class="btn1">Log Out</button></a>
+      <a href = "accounts/tables"><button class="btn1">View Data</button></a>
+
+
+      {% else %}
+        <a href = "accounts/login"><button class="btn1">Log In</button></a>
+        <a href = "accounts/register"><button class="btn2">Create Account</button></a>
+      {% endif %}
+
     </div>
   </div>
 
