@@ -19,7 +19,7 @@ def register(request):
                 return redirect('register')
 
             elif User.objects.filter(email = email).exists():
-                messages.info((request, "Account already exists with email"))
+                # messages.info((request, "Account already exists with email"))
                 return redirect('register')
 
             else:
@@ -32,10 +32,8 @@ def register(request):
 
         return redirect('/')
 
-    return render(request, 'register.html')
-
-
+    return render(request, 'register.html');
 
 def login(request):
-    pass
+     pass
 
